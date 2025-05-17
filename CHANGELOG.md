@@ -1,3 +1,6 @@
+**v0.54.2**
+* [[TeamMsgExtractor #465](https://github.com/TeamMsgExtractor/msg-extractor/issues/465)] Added missing `msg.close()` to `openMsg()`. If the MSG file was actually just a plain OLE file, it would be left open.
+
 **v0.54.1**
 * [[TeamMsgExtractor #462](https://github.com/TeamMsgExtractor/msg-extractor/issues/462)] Fix potential issue where child MSG might have incompatible encoding to parent MSG when trying to grab a stream from the parent.
 * Added code to attempt to significantly improve RTF deencapsulation times. This tries to strip away unneeded data before passing it to `RTFDE`. This shows improvements on all files that take more than one second. Currently, this actually fixes some files previously outputting wrong from `RTFDE` when deencapsulating the HTML body, specifically around non breaking spaces sometimes not transferring over.
