@@ -1,5 +1,9 @@
-**v0.54.2**
+**v0.55.0**
 * [[TeamMsgExtractor #465](https://github.com/TeamMsgExtractor/msg-extractor/issues/465)] Added missing `msg.close()` to `openMsg()`. If the MSG file was actually just a plain OLE file, it would be left open.
+* Adjusted the default value of `maxNameLength` for `MessageBase.save()` to 40 instead of 256.
+* Adjusted exception handling for `MessageBase.save()` to properly report the reason a folder fails to be created.
+* Simplified some of the code for `MessageBase.save()`.
+* Fixed some typing information.
 
 **v0.54.1**
 * [[TeamMsgExtractor #462](https://github.com/TeamMsgExtractor/msg-extractor/issues/462)] Fix potential issue where child MSG might have incompatible encoding to parent MSG when trying to grab a stream from the parent.
